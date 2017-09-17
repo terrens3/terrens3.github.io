@@ -37,8 +37,9 @@
 						<p>Спасибо за то,  <br>что выбрали нас</p>
 					</div>
 				</div>
-				<a class="main-down" href="#portfolio"><i class="icon-down"></i></a>
-			</div> 
+				<a class="main-down slowly" href="#portfolio"><i class="icon-down"></i></a>
+			</div> "
+
 
 			<div class="portfolio" id="portfolio">
 				<div class="container">
@@ -120,12 +121,12 @@
     	});
     </script>
     
-    	<script type="text/javascript">
+    	<script>
       $(document).ready (function(){
-        $("main-down slowly").on("click",function(event) {
+        $(".slowly").on("click",function(event) {
           event.preventDefault();
           var id = $(this).attr('href'),
-          top = $(id).offset().top;
+              top = $(id).offset().top;
           $('body,html').animate ({scrollTop: top}, 800);
         });
       });
